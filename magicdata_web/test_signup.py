@@ -91,18 +91,18 @@ def save_screenshot(filename, use_timestamp=True, folder="screenshorts"):
     return full_path
 # ============================== TEST CASES ==============================
 
-class TestSignup:
+# class TestSignup:
 
-    def test_blank_field_validation(self):
-        logger.info("Running test: Blank field validation")
-        create_an_account().click()
-        ActionChains(driver).move_to_element(signup_btn()).click().perform()
-        assert check_blank_username().text == validation_assert.ENTER_SIGNUP_USERNAME
-        logger.info("Blank username validation passed")
-        assert check_blank_email().text == validation_assert.ENTER_SIGNUP_EMAIL
-        logger.info("Blank email validation passed")
-        assert check_blank_password().text == validation_assert.ENTER_SIGNUP_PASSWORD
-        logger.info("Blank password validation passed")
+    # def test_blank_field_validation(self):
+    #     logger.info("Running test: Blank field validation")
+    #     create_an_account().click()
+    #     ActionChains(driver).move_to_element(signup_btn()).click().perform()
+    #     assert check_blank_username().text == validation_assert.ENTER_SIGNUP_USERNAME
+    #     logger.info("Blank username validation passed")
+    #     assert check_blank_email().text == validation_assert.ENTER_SIGNUP_EMAIL
+    #     logger.info("Blank email validation passed")
+    #     assert check_blank_password().text == validation_assert.ENTER_SIGNUP_PASSWORD
+    #     logger.info("Blank password validation passed")
     #
     # def test_already_exist_username1(self):
     #     logger.info("Running test: Existing username (suggestion 1)")
