@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fefca66a-7eb6-49fe-baeb-1fe74d112cdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/magic_data_sutomation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/test_log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/magicdata_setup/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/magicdata_setup/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/magicdata_setup/randomeString.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/magicdata_web/test_signup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant/creds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant/error.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant/input_field.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/constant/validation_assert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/magic_data_sutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/magic_data_sutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_web/test_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/test_signup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +31,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "pm162004"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/pm162004/magicdata_automation.git",
+    "accountId": "696cbb3e-404d-4ece-91ed-6b511318db28"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2y4v7IsBGfgPtxZsJ3puMSqvNvp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,12 +58,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/web-h-028/PycharmProjects/magic_data_sutomation/magicdata_web",
+    "last_opened_file_path": "C:/Users/Winner/PycharmProjects/magicdata_automation",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Winner\PycharmProjects\magicdata_automation" />
       <recent name="$PROJECT_DIR$/magicdata_web" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/magicdata_setup" />
@@ -66,7 +76,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
+        <option value="bundled-python-sdk-dfff61a61320-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.159" />
       </set>
     </attachedChunks>
   </component>
