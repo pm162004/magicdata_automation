@@ -7,8 +7,8 @@
     <list default="true" id="fefca66a-7eb6-49fe-baeb-1fe74d112cdd" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/constant/creds.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/creds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/input_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/input_field.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/validation_assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/validation_assert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/test_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_setup/randomeString.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_setup/randomeString.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/magicdata_web/test_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/test_signup.py" afterDir="false" />
     </list>
@@ -100,7 +100,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749179383899</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749180337563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749180337563</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749180406480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1749180406480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

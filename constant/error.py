@@ -1,2 +1,5 @@
 ENTER_VALID_FULLNAME = "Full Name should contain only letters and numbers"
 LENGTH_FULL_NAME_VALIDATION = "Full Name is too long"
+ENTER_VALID_EMAIL = "Please enter a valid email address"
+PASSWORD_NOT_MATCHING = "Confirm Password doesn't match with Password."
+PASSWORD_PATTERN_VALIDATION = "Password must contain at least: 1 uppercase letter,1 lowercase letter, 1 number and 1 special character."

@@ -1,5 +1,7 @@
 import random
 import string
+import time
+
 import requests
 import os
 
@@ -51,3 +53,13 @@ base_path = "/home/web-h-028/PycharmProjects/shrubs_automation/shrubs_web/test_p
 image_path = "/home/web-h-028/PycharmProjects/shrubs_automation/shrubs_web/image"
 relative_path = get_relative_image_path(base_path, image_path)
 print(relative_path)
+
+def generate_random_full_name():
+    first_names = ["Priya", "Ankit", "Ravi", "Neha", "Suresh", "Kavita", "Manoj", "Pooja"]
+    last_names = ["Sharma", "Verma", "Gupta", "Rathore", "Mishra", "Yadav", "Mehta", "Joshi"]
+    return f"{random.choice(first_names)} {random.choice(last_names)}"
+
+
+def generate_unique_email():
+    timestamp = int(time.time())
+    return f"user{timestamp}@testmail.com"
