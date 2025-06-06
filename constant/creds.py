@@ -2,6 +2,7 @@ from magicdata_setup.randomeString import generate_random_full_name, generate_un
 
 LONG_FULL_NAME = "ABC XYZ 2333333333333333333333333333555555"
 LONG_EMAIL = "a" * 245 + "@test.com"
+LONG_Ful = "a" * 245 + "@test.com"
 INVALID_FULL_NAME = "ABCD@"
 VALID_FULL_NAME = generate_random_full_name()
 INVALID_EMAIL_FORMAT = "invalid@gmail"

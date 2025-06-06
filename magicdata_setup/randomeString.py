@@ -63,3 +63,7 @@ def generate_random_full_name():
 def generate_unique_email():
     timestamp = int(time.time())
     return f"user{timestamp}@mailinator.com"
+
+def generate_random_emoji_string(length=2):
+    emoji_list = ['😊', '🚀', '😂', '🔥', '❤️', '😎', '🌟', '🎉', '🐍', '🤖', '👑', '💡']
+    return ''.join(random.choices(emoji_list, k=length))

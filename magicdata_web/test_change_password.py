@@ -230,7 +230,7 @@ def check_invalid_credentials():
 
 # ============================== TEST CASES ==============================
 
-class TestSignup:
+class TestChangePassword:
 
     def test_valid_login_flow(self):
         logger.info("Running test: Valid login flow")

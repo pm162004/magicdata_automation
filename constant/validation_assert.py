@@ -1,4 +1,5 @@
 ENTER_FULL_NAME = "Please enter your full name"
+
 ENTER_SIGNUP_EMAIL = "Email is required"
 ENTER_SIGNUP_PASSWORD = "Password is required"
 DASHBOARD = "dashboard"
@@ -8,3 +9,4 @@ ENTER_CURRENT_PASSWORD = "Current password is required!"
 ENTER_NEW_PASSWORD = "New password is required!"
 ENTER_CONFIRM_PASSWORD = "Confirm password is required!"
 CHANGE_PASSWORD_SUCCESS_MESSAGE= "Password changed successfully"
+SUCCESS_TOASTER_MESSAGE_PROFILE_UPDATE="User updated successfully"

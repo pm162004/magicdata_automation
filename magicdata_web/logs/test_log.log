@@ -1493,3 +1493,325 @@
 2025-06-06 17:34:11,000 - INFO - Testing login with new password
 2025-06-06 17:34:23,385 - INFO - Quitting browser
 2025-06-06 17:34:23,653 - INFO - Password reset to original and browser closed
+2025-06-06 17:41:39,795 - INFO - Opening signup page
+2025-06-06 17:41:41,546 - INFO - Running test: Valid login flow
+2025-06-06 17:41:41,546 - INFO - Refreshing page
+2025-06-06 17:41:49,131 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:41:49,132 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:53:30,561 - INFO - Opening signup page
+2025-06-06 17:53:32,257 - INFO - Running test: Valid login flow
+2025-06-06 17:53:32,257 - INFO - Refreshing page
+2025-06-06 17:53:40,038 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:53:40,044 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:53:40,169 - INFO - Testing blank field validation in change password form
+2025-06-06 17:53:51,369 - INFO - Running test: Full name special character validation
+2025-06-06 17:53:51,369 - INFO - Refreshing page
+2025-06-06 17:53:52,448 - INFO - Running test: Very long full name
+2025-06-06 17:53:52,448 - INFO - Refreshing page
+2025-06-06 17:53:53,589 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 17:53:53,590 - INFO - Refreshing page
+2025-06-06 17:53:54,720 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 17:53:54,720 - INFO - Refreshing page
+2025-06-06 17:54:09,376 - INFO - Opening signup page
+2025-06-06 17:54:11,152 - INFO - Running test: Valid login flow
+2025-06-06 17:54:11,152 - INFO - Refreshing page
+2025-06-06 17:54:18,810 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:54:18,816 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:54:18,974 - INFO - Testing blank field validation in change password form
+2025-06-06 17:54:36,022 - INFO - Running test: Full name special character validation
+2025-06-06 17:54:36,022 - INFO - Refreshing page
+2025-06-06 17:54:37,147 - INFO - Running test: Very long full name
+2025-06-06 17:54:37,147 - INFO - Refreshing page
+2025-06-06 17:54:38,242 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 17:54:38,242 - INFO - Refreshing page
+2025-06-06 17:54:39,305 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 17:54:39,305 - INFO - Refreshing page
+2025-06-06 17:55:38,404 - INFO - Opening signup page
+2025-06-06 17:55:40,491 - INFO - Running test: Valid login flow
+2025-06-06 17:55:40,491 - INFO - Refreshing page
+2025-06-06 17:55:47,914 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:55:47,919 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:55:48,037 - INFO - Testing blank field validation in change password form
+2025-06-06 17:55:48,970 - INFO - Blank field validations passed
+2025-06-06 17:55:48,972 - INFO - Running test: Full name special character validation
+2025-06-06 17:55:59,513 - INFO - Running test: Very long full name
+2025-06-06 17:55:59,566 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 17:55:59,619 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 17:56:39,908 - INFO - Opening signup page
+2025-06-06 17:56:41,607 - INFO - Running test: Valid login flow
+2025-06-06 17:56:41,607 - INFO - Refreshing page
+2025-06-06 17:56:49,030 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:56:49,036 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:56:49,225 - INFO - Testing blank field validation in change password form
+2025-06-06 17:56:50,165 - INFO - Blank field validations passed
+2025-06-06 17:56:50,173 - INFO - Running test: Full name special character validation
+2025-06-06 17:56:55,428 - INFO - Running test: Very long full name
+2025-06-06 17:56:55,479 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 17:56:55,526 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 17:57:47,499 - INFO - Opening signup page
+2025-06-06 17:57:49,113 - INFO - Running test: Valid login flow
+2025-06-06 17:57:49,114 - INFO - Refreshing page
+2025-06-06 17:57:56,898 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:57:56,900 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:57:56,986 - INFO - Testing blank field validation in change password form
+2025-06-06 17:57:58,412 - INFO - Blank field validations passed
+2025-06-06 17:57:58,413 - INFO - Running test: Full name special character validation
+2025-06-06 17:58:14,015 - INFO - Opening signup page
+2025-06-06 17:58:16,213 - INFO - Running test: Valid login flow
+2025-06-06 17:58:16,213 - INFO - Refreshing page
+2025-06-06 17:58:23,531 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:58:23,536 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:58:23,705 - INFO - Testing blank field validation in change password form
+2025-06-06 17:58:24,391 - INFO - Blank field validations passed
+2025-06-06 17:58:37,452 - INFO - Opening signup page
+2025-06-06 17:58:39,660 - INFO - Running test: Valid login flow
+2025-06-06 17:58:39,660 - INFO - Refreshing page
+2025-06-06 17:58:46,227 - INFO - Opening signup page
+2025-06-06 17:58:48,410 - INFO - Running test: Valid login flow
+2025-06-06 17:58:48,411 - INFO - Refreshing page
+2025-06-06 17:58:56,421 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:58:56,427 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:58:56,795 - INFO - Testing blank field validation in change password form
+2025-06-06 17:58:58,118 - INFO - Blank field validations passed
+2025-06-06 17:58:58,120 - INFO - Running test: Full name special character validation
+2025-06-06 18:00:34,888 - INFO - Opening signup page
+2025-06-06 18:00:36,481 - INFO - Running test: Valid login flow
+2025-06-06 18:00:36,481 - INFO - Refreshing page
+2025-06-06 18:00:43,932 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:00:43,937 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:00:44,171 - INFO - Testing blank field validation in change password form
+2025-06-06 18:00:44,946 - INFO - Blank field validations passed
+2025-06-06 18:00:44,948 - INFO - Running test: Full name special character validation
+2025-06-06 18:01:20,801 - INFO - Opening signup page
+2025-06-06 18:01:22,455 - INFO - Running test: Valid login flow
+2025-06-06 18:01:22,455 - INFO - Refreshing page
+2025-06-06 18:01:30,073 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:01:30,079 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:01:30,199 - INFO - Testing blank field validation in change password form
+2025-06-06 18:01:31,112 - INFO - Blank field validations passed
+2025-06-06 18:01:31,116 - INFO - Running test: Full name special character validation
+2025-06-06 18:01:33,249 - INFO - Full name special character validation passed
+2025-06-06 18:01:33,251 - INFO - Running test: Very long full name
+2025-06-06 18:01:57,550 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:02:11,985 - INFO - Opening signup page
+2025-06-06 18:02:13,698 - INFO - Running test: Valid login flow
+2025-06-06 18:02:13,698 - INFO - Refreshing page
+2025-06-06 18:02:21,309 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:02:21,314 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:02:21,501 - INFO - Testing blank field validation in change password form
+2025-06-06 18:02:22,308 - INFO - Blank field validations passed
+2025-06-06 18:02:22,310 - INFO - Running test: Full name special character validation
+2025-06-06 18:02:24,455 - INFO - Full name special character validation passed
+2025-06-06 18:02:24,461 - INFO - Running test: Very long full name
+2025-06-06 18:02:36,798 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:03:38,116 - INFO - Opening signup page
+2025-06-06 18:03:39,977 - INFO - Running test: Valid login flow
+2025-06-06 18:03:39,977 - INFO - Refreshing page
+2025-06-06 18:03:47,329 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:03:47,334 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:03:47,424 - INFO - Testing blank field validation in change password form
+2025-06-06 18:03:48,119 - INFO - Blank field validations passed
+2025-06-06 18:03:48,120 - INFO - Running test: Full name special character validation
+2025-06-06 18:03:50,222 - INFO - Full name special character validation passed
+2025-06-06 18:03:50,224 - INFO - Running test: Very long full name
+2025-06-06 18:03:50,394 - INFO - Long full name validation passed
+2025-06-06 18:03:50,396 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:04:28,438 - INFO - Opening signup page
+2025-06-06 18:04:30,203 - INFO - Running test: Valid login flow
+2025-06-06 18:04:30,203 - INFO - Refreshing page
+2025-06-06 18:04:37,592 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:04:37,597 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:04:37,756 - INFO - Testing blank field validation in change password form
+2025-06-06 18:04:38,777 - INFO - Blank field validations passed
+2025-06-06 18:04:38,781 - INFO - Running test: Full name special character validation
+2025-06-06 18:04:40,946 - INFO - Full name special character validation passed
+2025-06-06 18:04:40,949 - INFO - Running test: Very long full name
+2025-06-06 18:04:41,137 - INFO - Long full name validation passed
+2025-06-06 18:04:41,138 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:04:43,343 - INFO - Leading/trailing spaces trimmed correctly
+2025-06-06 18:04:54,770 - INFO - Opening signup page
+2025-06-06 18:04:56,385 - INFO - Running test: Valid login flow
+2025-06-06 18:04:56,385 - INFO - Refreshing page
+2025-06-06 18:05:03,727 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:05:03,734 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:05:03,895 - INFO - Testing blank field validation in change password form
+2025-06-06 18:05:05,121 - INFO - Blank field validations passed
+2025-06-06 18:05:05,123 - INFO - Running test: Full name special character validation
+2025-06-06 18:05:07,220 - INFO - Full name special character validation passed
+2025-06-06 18:05:07,222 - INFO - Running test: Very long full name
+2025-06-06 18:05:07,381 - INFO - Long full name validation passed
+2025-06-06 18:05:07,385 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:05:09,620 - INFO - Leading/trailing spaces trimmed correctly
+2025-06-06 18:05:09,622 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 18:05:10,388 - INFO - Profile updated successfully and toaster verified
+2025-06-06 18:10:29,370 - INFO - Opening signup page
+2025-06-06 18:10:31,495 - INFO - Running test: Valid login flow
+2025-06-06 18:10:31,495 - INFO - Refreshing page
+2025-06-06 18:10:38,996 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:10:38,999 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:10:39,202 - INFO - Testing blank field validation in change password form
+2025-06-06 18:10:39,935 - INFO - Running test: Full name special character validation
+2025-06-06 18:10:39,999 - INFO - Running test: Full name with only spaces
+2025-06-06 18:10:40,044 - INFO - Running test: Full name with numbers only
+2025-06-06 18:10:40,102 - INFO - Running test: Very long full name
+2025-06-06 18:10:40,203 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:10:40,275 - INFO - Running test: Full name with emojis
+2025-06-06 18:10:40,338 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:10:40,429 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:10:40,502 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:10:40,554 - INFO - Running test: Full name with random emojis
+2025-06-06 18:10:40,603 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 18:10:46,035 - INFO - Opening signup page
+2025-06-06 18:10:47,742 - INFO - Running test: Valid login flow
+2025-06-06 18:10:47,742 - INFO - Refreshing page
+2025-06-06 18:11:08,113 - INFO - Opening signup page
+2025-06-06 18:11:09,900 - INFO - Running test: Valid login flow
+2025-06-06 18:11:09,901 - INFO - Refreshing page
+2025-06-06 18:11:17,404 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:11:17,409 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:11:17,535 - INFO - Testing blank field validation in change password form
+2025-06-06 18:11:18,408 - INFO - Blank field validations passed
+2025-06-06 18:11:18,410 - INFO - Running test: Full name special character validation
+2025-06-06 18:11:20,585 - INFO - Full name special character validation passed
+2025-06-06 18:11:20,587 - INFO - Running test: Full name with only spaces
+2025-06-06 18:11:32,587 - INFO - Running test: Full name with numbers only
+2025-06-06 18:11:32,648 - INFO - Running test: Very long full name
+2025-06-06 18:11:32,705 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:11:32,756 - INFO - Running test: Full name with emojis
+2025-06-06 18:11:32,805 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:11:32,855 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:11:32,902 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:11:32,952 - INFO - Running test: Full name with random emojis
+2025-06-06 18:11:33,001 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 18:12:29,652 - INFO - Opening signup page
+2025-06-06 18:12:31,337 - INFO - Running test: Valid login flow
+2025-06-06 18:12:31,338 - INFO - Refreshing page
+2025-06-06 18:12:38,933 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:12:38,938 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:12:39,160 - INFO - Running test: Full name with only spaces
+2025-06-06 18:13:04,529 - INFO - Opening signup page
+2025-06-06 18:13:06,103 - INFO - Running test: Valid login flow
+2025-06-06 18:13:06,103 - INFO - Refreshing page
+2025-06-06 18:13:13,704 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:13:13,709 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:13:13,798 - INFO - Running test: Full name with only spaces
+2025-06-06 18:13:14,656 - INFO - Validation passed for full name with only spaces
+2025-06-06 18:13:35,983 - INFO - Opening signup page
+2025-06-06 18:13:37,577 - INFO - Running test: Valid login flow
+2025-06-06 18:13:37,577 - INFO - Refreshing page
+2025-06-06 18:13:45,173 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:13:45,178 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:13:45,266 - INFO - Running test: Full name with numbers only
+2025-06-06 18:13:46,549 - INFO - Validation passed for full name with only numbers
+2025-06-06 18:14:20,126 - INFO - Opening signup page
+2025-06-06 18:14:21,847 - INFO - Running test: Valid login flow
+2025-06-06 18:14:21,848 - INFO - Refreshing page
+2025-06-06 18:14:29,181 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:14:29,182 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:14:29,284 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:14:32,169 - INFO - Leading/trailing spaces trimmed correctly
+2025-06-06 18:14:48,218 - INFO - Opening signup page
+2025-06-06 18:14:49,851 - INFO - Running test: Valid login flow
+2025-06-06 18:14:49,851 - INFO - Refreshing page
+2025-06-06 18:14:57,442 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:14:57,447 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:14:57,718 - INFO - Running test: Full name with emojis
+2025-06-06 18:15:31,455 - INFO - Opening signup page
+2025-06-06 18:15:33,495 - INFO - Running test: Valid login flow
+2025-06-06 18:15:33,495 - INFO - Refreshing page
+2025-06-06 18:15:41,047 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:15:41,053 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:15:41,176 - INFO - Running test: Full name with emojis
+2025-06-06 18:16:19,394 - INFO - Opening signup page
+2025-06-06 18:16:21,126 - INFO - Running test: Valid login flow
+2025-06-06 18:16:21,126 - INFO - Refreshing page
+2025-06-06 18:16:28,749 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:16:28,754 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:16:28,901 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:16:30,008 - INFO - Full name accepted with middle initial
+2025-06-06 18:16:46,908 - INFO - Opening signup page
+2025-06-06 18:16:48,672 - INFO - Running test: Valid login flow
+2025-06-06 18:16:48,672 - INFO - Refreshing page
+2025-06-06 18:16:56,108 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:16:56,113 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:16:56,243 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:17:04,479 - INFO - Stress input validation triggered
+2025-06-06 18:17:42,493 - INFO - Opening signup page
+2025-06-06 18:17:44,232 - INFO - Running test: Valid login flow
+2025-06-06 18:17:44,233 - INFO - Refreshing page
+2025-06-06 18:17:51,859 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:17:51,864 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:17:52,112 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:17:53,785 - INFO - Full name with hyphen/apostrophe accepted or validated
+2025-06-06 18:18:07,055 - INFO - Opening signup page
+2025-06-06 18:18:08,689 - INFO - Running test: Valid login flow
+2025-06-06 18:18:08,689 - INFO - Refreshing page
+2025-06-06 18:18:16,242 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:18:16,247 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:18:16,450 - INFO - Running test: Full name with random emojis
+2025-06-06 18:18:58,692 - INFO - Opening signup page
+2025-06-06 18:19:01,046 - INFO - Running test: Valid login flow
+2025-06-06 18:19:01,046 - INFO - Refreshing page
+2025-06-06 18:19:08,570 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:19:08,572 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:19:08,687 - INFO - Testing blank field validation in change password form
+2025-06-06 18:19:09,515 - INFO - Blank field validations passed
+2025-06-06 18:19:09,520 - INFO - Running test: Full name special character validation
+2025-06-06 18:19:11,689 - INFO - Full name special character validation passed
+2025-06-06 18:19:11,691 - INFO - Running test: Full name with only spaces
+2025-06-06 18:19:11,944 - INFO - Validation passed for full name with only spaces
+2025-06-06 18:19:11,946 - INFO - Running test: Full name with numbers only
+2025-06-06 18:19:12,146 - INFO - Validation passed for full name with only numbers
+2025-06-06 18:19:12,148 - INFO - Running test: Very long full name
+2025-06-06 18:19:12,492 - INFO - Long full name validation passed
+2025-06-06 18:19:12,495 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:19:14,792 - INFO - Leading/trailing spaces trimmed correctly
+2025-06-06 18:19:14,795 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:19:15,296 - INFO - Full name accepted with middle initial
+2025-06-06 18:19:15,297 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:19:16,118 - INFO - Stress input validation triggered
+2025-06-06 18:19:16,119 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:19:16,360 - INFO - Full name with hyphen/apostrophe accepted or validated
+2025-06-06 18:19:16,362 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 18:19:16,641 - INFO - Profile updated successfully and toaster verified
+2025-06-06 18:19:17,068 - INFO - Login with uppercase email successful
+2025-06-06 18:20:23,468 - INFO - Opening signup page
+2025-06-06 18:20:25,362 - INFO - Running test: Valid login flow
+2025-06-06 18:20:25,363 - INFO - Refreshing page
+2025-06-06 18:20:33,736 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 18:20:33,741 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:20:33,898 - INFO - Testing blank field validation in change password form
+2025-06-06 18:20:34,720 - INFO - Blank field validations passed
+2025-06-06 18:20:36,726 - INFO - Running test: Full name special character validation
+2025-06-06 18:20:38,943 - INFO - Full name special character validation passed
+2025-06-06 18:20:40,949 - INFO - Running test: Full name with only spaces
+2025-06-06 18:20:41,215 - INFO - Validation passed for full name with only spaces
+2025-06-06 18:20:43,221 - INFO - Running test: Full name with numbers only
+2025-06-06 18:20:43,477 - INFO - Validation passed for full name with only numbers
+2025-06-06 18:20:45,481 - INFO - Running test: Very long full name
+2025-06-06 18:20:45,689 - INFO - Long full name validation passed
+2025-06-06 18:20:47,694 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:20:49,942 - INFO - Leading/trailing spaces trimmed correctly
+2025-06-06 18:20:51,947 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:20:52,204 - INFO - Full name accepted with middle initial
+2025-06-06 18:20:54,206 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:20:54,929 - INFO - Stress input validation triggered
+2025-06-06 18:20:56,934 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:20:57,167 - INFO - Full name with hyphen/apostrophe accepted or validated
+2025-06-06 18:20:59,172 - INFO - Updating profile with a valid full name and checking success toaster
+2025-06-06 18:21:00,579 - INFO - Profile updated successfully and toaster verified
+2025-06-06 18:21:03,134 - INFO - Login with uppercase email successful
+2025-06-06 18:21:14,785 - INFO - Opening signup page
+2025-06-06 18:21:16,394 - INFO - Running test: Valid login flow
+2025-06-06 18:21:16,394 - INFO - Refreshing page
+2025-06-06 18:21:20,179 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 18:21:20,322 - INFO - Testing blank field validation in change password form
+2025-06-06 18:21:20,466 - INFO - Running test: Full name special character validation
+2025-06-06 18:21:20,622 - INFO - Running test: Full name with only spaces
+2025-06-06 18:21:20,806 - INFO - Running test: Full name with numbers only
+2025-06-06 18:21:20,961 - INFO - Running test: Very long full name
+2025-06-06 18:21:21,129 - INFO - Running test: Full name with leading/trailing spaces
+2025-06-06 18:21:21,308 - INFO - Running test: Full name with middle initial and space
+2025-06-06 18:21:21,449 - INFO - Running test: Full name rapid input paste
+2025-06-06 18:21:21,589 - INFO - Running test: Full name with hyphen and apostrophe
+2025-06-06 18:21:21,778 - INFO - Updating profile with a valid full name and checking success toaster
