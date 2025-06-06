@@ -1,1 +1,30 @@
 2025-06-05 15:23:25,950 - INFO - Opening signup page
+2025-06-05 22:05:53,606 - INFO - Opening signup page
+2025-06-05 22:06:01,690 - INFO - Running test: Blank field validation
+2025-06-05 22:55:50,096 - INFO - Opening signup page
+2025-06-05 22:55:50,924 - INFO - Running test: Blank field validation
+2025-06-05 22:56:06,372 - INFO - Blank full name validation passed
+2025-06-05 22:58:36,438 - INFO - Opening signup page
+2025-06-05 22:58:37,129 - INFO - Running test: Blank field validation
+2025-06-05 23:00:36,368 - INFO - Opening signup page
+2025-06-05 23:00:37,209 - INFO - Running test: Blank field validation
+2025-06-05 23:00:38,971 - INFO - Blank full name validation passed
+2025-06-05 23:01:57,241 - INFO - Opening signup page
+2025-06-05 23:01:58,056 - INFO - Running test: Blank field validation
+2025-06-05 23:01:59,385 - INFO - Blank full name validation passed
+2025-06-05 23:02:13,828 - INFO - Blank email validation passed
+2025-06-05 23:02:13,951 - INFO - Blank password validation passed
+2025-06-05 23:04:47,054 - INFO - Opening signup page
+2025-06-05 23:04:47,843 - INFO - Running test: Blank field validation
+2025-06-05 23:04:49,196 - INFO - Blank full name validation passed
+2025-06-05 23:04:49,308 - INFO - Blank email validation passed
+2025-06-05 23:04:49,405 - INFO - Blank password validation passed
+2025-06-05 23:20:49,599 - INFO - Opening signup page
+2025-06-05 23:20:50,274 - INFO - Running test: Blank field validation
+2025-06-05 23:20:51,677 - INFO - Blank full name validation passed
+2025-06-05 23:21:44,547 - INFO - Opening signup page
+2025-06-05 23:21:45,380 - INFO - Running test: Blank field validation
+2025-06-05 23:21:46,745 - INFO - Blank full name validation passed
+2025-06-05 23:22:32,233 - INFO - Opening signup page
+2025-06-05 23:22:32,951 - INFO - Running test: Blank field validation
+2025-06-05 23:22:34,377 - INFO - Blank full name validation passed

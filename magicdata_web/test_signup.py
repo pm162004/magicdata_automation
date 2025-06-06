@@ -1,5 +1,5 @@
 import time,os,datetime
-from selenium.webdriver import ActionChains
+from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
@@ -7,7 +7,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from magicdata_setup.config import config
 from magicdata_setup import randomeString
 from log_config import setup_logger
-
+from constant import validation_assert,creds,error
 logger = setup_logger()
 chrome_options = webdriver.ChromeOptions()
 driver = webdriver.Chrome(options=chrome_options)
@@ -15,35 +15,47 @@ chrome_options.add_argument('--headless')
 driver.maximize_window()
 logger.info("Opening signup page")
 driver.get(config.WEB_URL)
+email = config.CORRECT_EMAIL
+password = config.CORRECT_PASSWORD
+confirm_password = config.CONFIRM_PASSWORD
 wait = WebDriverWait(driver, 30)
+clear_input = Keys.SPACE+ Keys.CONTROL + 'a' + Keys.BACKSPACE
 
 
 
-def create_an_account():
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Create Account']")))
+def create_an_account_btn():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Create Account']")))
 
-def username_input_field():
-    return wait.until(EC.presence_of_element_located((By.NAME, "username")))
+def full_name_input_field():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter your full name']")))
+
+def full_name_length_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Full Name is too long')]")))
+
+def full_name_special_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Full Name should contain only letters and numbers')]")))
 
 def email_input_field():
-    time.sleep(1)
-    return wait.until(EC.presence_of_element_located((By.NAME, "email")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter your email address']")))
 
 def password_input_field():
-    return wait.until(EC.presence_of_element_located((By.NAME, "password")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Enter your password']")))
+
+def confirm_password_input_field():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//input[@placeholder='Confirm your password']")))
 
 def signup_btn():
 
-    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@name='btn-signup']")))
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//a[normalize-space()='Sign Up']")))
 
-def check_blank_username():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Username is required')]")))
+def check_blank_fullname():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Please enter your full name')]")))
 
 def check_blank_email():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email address is required')]")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Email is required')]")))
 
 def check_blank_password():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Password is required')]")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Password is required')]")))
 
 def username_exists_validation():
     return wait.until(EC.visibility_of_element_located((
@@ -91,19 +103,29 @@ def save_screenshot(filename, use_timestamp=True, folder="screenshorts"):
     return full_path
 # ============================== TEST CASES ==============================
 
-# class TestSignup:
+class TestSignup:
 
-    # def test_blank_field_validation(self):
-    #     logger.info("Running test: Blank field validation")
-    #     create_an_account().click()
-    #     ActionChains(driver).move_to_element(signup_btn()).click().perform()
-    #     assert check_blank_username().text == validation_assert.ENTER_SIGNUP_USERNAME
-    #     logger.info("Blank username validation passed")
-    #     assert check_blank_email().text == validation_assert.ENTER_SIGNUP_EMAIL
-    #     logger.info("Blank email validation passed")
-    #     assert check_blank_password().text == validation_assert.ENTER_SIGNUP_PASSWORD
-    #     logger.info("Blank password validation passed")
-    #
+    def test_blank_field_validation(self):
+        logger.info("Running test: Blank field validation")
+        signup_btn().click()
+        full_name_input_field().send_keys(clear_input)
+        assert check_blank_fullname().text == validation_assert.ENTER_FULL_NAME
+        logger.info("Blank full name validation passed")
+        email_input_field().send_keys('/'+clear_input)
+        assert check_blank_email().text == validation_assert.ENTER_SIGNUP_EMAIL
+        logger.info("Blank email validation passed")
+        password_input_field().send_keys(clear_input)
+        assert check_blank_password().text == validation_assert.ENTER_SIGNUP_PASSWORD
+        logger.info("Blank password validation passed")
+
+    def test_full_name_validation(self):
+        full_name_input_field().send_keys(creds.LONG_FULL_NAME)
+        email_input_field().send_keys(email)
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(confirm_password)
+        create_an_account_btn().click()
+        assert full_name_length_validation().text == error.LENGTH_FULL_NAME_VALIDATION
+
     # def test_already_exist_username1(self):
     #     logger.info("Running test: Existing username (suggestion 1)")
     #     refresh_page()
