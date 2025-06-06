@@ -218,3 +218,286 @@
 2025-06-06 09:26:19,119 - INFO - Running test: Password mismatch validation
 2025-06-06 09:26:19,119 - INFO - Refreshing page
 2025-06-06 09:26:20,635 - INFO - Password mismatch validation passed
+2025-06-06 09:31:31,745 - INFO - Opening signup page
+2025-06-06 09:31:33,441 - INFO - Running test: Blank field validation
+2025-06-06 09:31:35,340 - INFO - Blank full name validation passed
+2025-06-06 09:31:35,444 - INFO - Blank email validation passed
+2025-06-06 09:31:35,535 - INFO - Blank password validation passed
+2025-06-06 09:31:35,536 - INFO - Running test: Full name max length validation
+2025-06-06 09:31:35,536 - INFO - Refreshing page
+2025-06-06 09:31:37,302 - INFO - Full name length validation passed
+2025-06-06 09:31:37,303 - INFO - Running test: Full name special character validation
+2025-06-06 09:31:37,303 - INFO - Refreshing page
+2025-06-06 09:31:38,674 - INFO - Full name special character validation passed
+2025-06-06 09:31:38,676 - INFO - Running test: Invalid email format validation
+2025-06-06 09:31:38,676 - INFO - Refreshing page
+2025-06-06 09:31:40,309 - INFO - Invalid email format validation passed
+2025-06-06 09:31:40,310 - INFO - Running test: Password pattern validation
+2025-06-06 09:31:40,310 - INFO - Refreshing page
+2025-06-06 09:31:41,966 - INFO - Password pattern validation passed
+2025-06-06 09:31:41,968 - INFO - Running test: Password mismatch validation
+2025-06-06 09:31:41,968 - INFO - Refreshing page
+2025-06-06 09:31:43,326 - INFO - Password mismatch validation passed
+2025-06-06 09:31:43,328 - INFO - Running test: Successful signup flow
+2025-06-06 09:31:43,328 - INFO - Refreshing page
+2025-06-06 09:35:27,925 - INFO - Opening signup page
+2025-06-06 09:35:29,579 - INFO - Running test: Blank field validation
+2025-06-06 09:35:31,617 - INFO - Blank full name validation passed
+2025-06-06 09:35:31,719 - INFO - Blank email validation passed
+2025-06-06 09:35:31,812 - INFO - Blank password validation passed
+2025-06-06 09:35:31,813 - INFO - Running test: Full name max length validation
+2025-06-06 09:35:31,813 - INFO - Refreshing page
+2025-06-06 09:35:33,542 - INFO - Full name length validation passed
+2025-06-06 09:35:33,543 - INFO - Running test: Full name special character validation
+2025-06-06 09:35:33,543 - INFO - Refreshing page
+2025-06-06 09:35:34,961 - INFO - Full name special character validation passed
+2025-06-06 09:35:34,962 - INFO - Running test: Invalid email format validation
+2025-06-06 09:35:34,962 - INFO - Refreshing page
+2025-06-06 09:35:36,592 - INFO - Invalid email format validation passed
+2025-06-06 09:35:36,593 - INFO - Running test: Password pattern validation
+2025-06-06 09:35:36,593 - INFO - Refreshing page
+2025-06-06 09:35:38,041 - INFO - Password pattern validation passed
+2025-06-06 09:35:38,042 - INFO - Running test: Password mismatch validation
+2025-06-06 09:35:38,042 - INFO - Refreshing page
+2025-06-06 09:35:39,423 - INFO - Password mismatch validation passed
+2025-06-06 09:35:39,425 - INFO - Running test: Existing user signup validation
+2025-06-06 09:35:39,425 - INFO - Refreshing page
+2025-06-06 09:35:41,139 - INFO - Running test: Successful signup flow
+2025-06-06 09:35:41,139 - INFO - Refreshing page
+2025-06-06 09:58:06,625 - INFO - Opening signup page
+2025-06-06 09:58:08,644 - INFO - Running test: Blank field validation
+2025-06-06 09:58:10,644 - INFO - Blank full name validation passed
+2025-06-06 09:58:10,732 - INFO - Blank email validation passed
+2025-06-06 09:58:10,824 - INFO - Blank password validation passed
+2025-06-06 09:58:10,826 - INFO - Running test: Full name max length validation
+2025-06-06 09:58:10,826 - INFO - Refreshing page
+2025-06-06 09:58:12,728 - INFO - Full name length validation passed
+2025-06-06 09:58:12,729 - INFO - Running test: Full name special character validation
+2025-06-06 09:58:12,729 - INFO - Refreshing page
+2025-06-06 09:58:14,025 - INFO - Full name special character validation passed
+2025-06-06 09:58:14,026 - INFO - Running test: Invalid email format validation
+2025-06-06 09:58:14,027 - INFO - Refreshing page
+2025-06-06 09:58:15,617 - INFO - Invalid email format validation passed
+2025-06-06 09:58:15,618 - INFO - Running test: Password pattern validation
+2025-06-06 09:58:15,618 - INFO - Refreshing page
+2025-06-06 09:58:16,981 - INFO - Password pattern validation passed
+2025-06-06 09:58:16,982 - INFO - Running test: Password mismatch validation
+2025-06-06 09:58:16,982 - INFO - Refreshing page
+2025-06-06 09:58:18,417 - INFO - Password mismatch validation passed
+2025-06-06 09:58:18,419 - INFO - Running test: Existing user signup validation
+2025-06-06 09:58:18,419 - INFO - Refreshing page
+2025-06-06 09:58:20,556 - INFO - Running test: Successful signup flow
+2025-06-06 09:58:20,556 - INFO - Refreshing page
+2025-06-06 09:58:38,253 - INFO - Opening signup page
+2025-06-06 09:58:40,136 - INFO - Running test: Blank field validation
+2025-06-06 09:58:42,294 - INFO - Blank full name validation passed
+2025-06-06 09:58:42,379 - INFO - Blank email validation passed
+2025-06-06 09:58:42,467 - INFO - Blank password validation passed
+2025-06-06 09:58:42,469 - INFO - Running test: Full name max length validation
+2025-06-06 09:58:42,469 - INFO - Refreshing page
+2025-06-06 09:58:45,256 - INFO - Full name length validation passed
+2025-06-06 09:58:45,257 - INFO - Running test: Full name special character validation
+2025-06-06 09:58:45,257 - INFO - Refreshing page
+2025-06-06 09:58:47,627 - INFO - Full name special character validation passed
+2025-06-06 09:58:47,628 - INFO - Running test: Invalid email format validation
+2025-06-06 09:58:47,628 - INFO - Refreshing page
+2025-06-06 09:58:50,212 - INFO - Invalid email format validation passed
+2025-06-06 09:58:50,214 - INFO - Running test: Password pattern validation
+2025-06-06 09:58:50,214 - INFO - Refreshing page
+2025-06-06 09:58:52,784 - INFO - Password pattern validation passed
+2025-06-06 09:58:52,786 - INFO - Running test: Password mismatch validation
+2025-06-06 09:58:52,786 - INFO - Refreshing page
+2025-06-06 09:58:55,454 - INFO - Password mismatch validation passed
+2025-06-06 09:58:55,455 - INFO - Running test: Existing user signup validation
+2025-06-06 09:58:55,455 - INFO - Refreshing page
+2025-06-06 09:58:58,199 - INFO - Running test: Successful signup flow
+2025-06-06 09:58:58,199 - INFO - Refreshing page
+2025-06-06 10:04:36,601 - INFO - Opening signup page
+2025-06-06 10:04:38,263 - INFO - Running test: Blank field validation
+2025-06-06 10:04:39,756 - INFO - Running test: Existing user signup validation
+2025-06-06 10:04:39,756 - INFO - Refreshing page
+2025-06-06 10:05:52,100 - INFO - Opening signup page
+2025-06-06 10:05:53,770 - INFO - Running test: Blank field validation
+2025-06-06 10:05:54,493 - INFO - Running test: Existing user signup validation
+2025-06-06 10:05:54,493 - INFO - Refreshing page
+2025-06-06 10:11:41,152 - INFO - Opening signup page
+2025-06-06 10:11:42,930 - INFO - Running test: Blank field validation
+2025-06-06 10:11:44,300 - INFO - Running test: Existing user signup validation
+2025-06-06 10:11:44,301 - INFO - Refreshing page
+2025-06-06 10:13:06,962 - INFO - Opening signup page
+2025-06-06 10:13:08,608 - INFO - Running test: Blank field validation
+2025-06-06 10:13:10,264 - INFO - Running test: Existing user signup validation
+2025-06-06 10:13:10,264 - INFO - Refreshing page
+2025-06-06 10:13:50,772 - INFO - Opening signup page
+2025-06-06 10:13:52,376 - INFO - Running test: Blank field validation
+2025-06-06 10:13:53,844 - INFO - Running test: Existing user signup validation
+2025-06-06 10:13:53,844 - INFO - Refreshing page
+2025-06-06 10:13:57,764 - INFO - Signup blocked for existing user – validation passed
+2025-06-06 10:14:15,982 - INFO - Opening signup page
+2025-06-06 10:14:17,633 - INFO - Running test: Blank field validation
+2025-06-06 10:14:19,574 - INFO - Blank full name validation passed
+2025-06-06 10:14:19,675 - INFO - Blank email validation passed
+2025-06-06 10:14:19,777 - INFO - Blank password validation passed
+2025-06-06 10:14:19,778 - INFO - Running test: Full name max length validation
+2025-06-06 10:14:19,779 - INFO - Refreshing page
+2025-06-06 10:14:22,560 - INFO - Full name length validation passed
+2025-06-06 10:14:22,562 - INFO - Running test: Full name special character validation
+2025-06-06 10:14:22,562 - INFO - Refreshing page
+2025-06-06 10:14:25,302 - INFO - Full name special character validation passed
+2025-06-06 10:14:25,303 - INFO - Running test: Invalid email format validation
+2025-06-06 10:14:25,303 - INFO - Refreshing page
+2025-06-06 10:14:27,933 - INFO - Invalid email format validation passed
+2025-06-06 10:14:27,934 - INFO - Running test: Password pattern validation
+2025-06-06 10:14:27,934 - INFO - Refreshing page
+2025-06-06 10:14:30,783 - INFO - Password pattern validation passed
+2025-06-06 10:14:30,787 - INFO - Running test: Password mismatch validation
+2025-06-06 10:14:30,788 - INFO - Refreshing page
+2025-06-06 10:14:33,568 - INFO - Password mismatch validation passed
+2025-06-06 10:14:33,569 - INFO - Running test: Existing user signup validation
+2025-06-06 10:14:33,569 - INFO - Refreshing page
+2025-06-06 10:14:37,612 - INFO - Signup blocked for existing user – validation passed
+2025-06-06 10:14:37,617 - INFO - Running test: Successful signup flow
+2025-06-06 10:14:37,618 - INFO - Refreshing page
+2025-06-06 10:18:07,804 - INFO - Opening signup page
+2025-06-06 10:18:09,613 - INFO - Running test: Blank field validation
+2025-06-06 10:18:11,852 - INFO - Blank full name validation passed
+2025-06-06 10:18:11,953 - INFO - Blank email validation passed
+2025-06-06 10:18:12,054 - INFO - Blank password validation passed
+2025-06-06 10:18:12,056 - INFO - Running test: Full name max length validation
+2025-06-06 10:18:12,056 - INFO - Refreshing page
+2025-06-06 10:18:14,867 - INFO - Full name length validation passed
+2025-06-06 10:18:14,868 - INFO - Running test: Full name special character validation
+2025-06-06 10:18:14,868 - INFO - Refreshing page
+2025-06-06 10:18:17,253 - INFO - Full name special character validation passed
+2025-06-06 10:18:17,255 - INFO - Running test: Invalid email format validation
+2025-06-06 10:18:17,255 - INFO - Refreshing page
+2025-06-06 10:18:20,288 - INFO - Invalid email format validation passed
+2025-06-06 10:18:20,289 - INFO - Running test: Password pattern validation
+2025-06-06 10:18:20,290 - INFO - Refreshing page
+2025-06-06 10:18:23,166 - INFO - Password pattern validation passed
+2025-06-06 10:18:23,167 - INFO - Running test: Password mismatch validation
+2025-06-06 10:18:23,168 - INFO - Refreshing page
+2025-06-06 10:18:25,920 - INFO - Password mismatch validation passed
+2025-06-06 10:18:25,922 - INFO - Running test: Existing user signup validation
+2025-06-06 10:18:25,922 - INFO - Refreshing page
+2025-06-06 10:18:29,819 - INFO - Signup blocked for existing user – validation passed
+2025-06-06 10:18:29,824 - INFO - Running test: Successful signup flow
+2025-06-06 10:18:29,825 - INFO - Refreshing page
+2025-06-06 10:18:35,526 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 10:20:47,560 - INFO - Opening signup page
+2025-06-06 10:20:49,214 - INFO - Running test: Blank field validation
+2025-06-06 10:20:50,189 - INFO - Running test: Whitespace-only input validation
+2025-06-06 10:20:50,189 - INFO - Refreshing page
+2025-06-06 10:21:24,084 - INFO - Opening signup page
+2025-06-06 10:21:25,811 - INFO - Running test: Blank field validation
+2025-06-06 10:21:27,290 - INFO - Running test: Email with spaces validation
+2025-06-06 10:21:27,291 - INFO - Refreshing page
+2025-06-06 10:21:56,711 - INFO - Opening signup page
+2025-06-06 10:21:58,391 - INFO - Running test: Blank field validation
+2025-06-06 10:21:59,866 - INFO - Running test: Multiple signup button clicks
+2025-06-06 10:21:59,866 - INFO - Refreshing page
+2025-06-06 10:22:45,545 - INFO - Opening signup page
+2025-06-06 10:22:47,286 - INFO - Running test: Blank field validation
+2025-06-06 10:22:48,734 - INFO - Running test: Password case sensitivity
+2025-06-06 10:22:48,734 - INFO - Refreshing page
+2025-06-06 10:22:51,551 - INFO - Password case mismatch correctly validated
+2025-06-06 10:23:56,133 - INFO - Opening signup page
+2025-06-06 10:23:57,880 - INFO - Running test: Blank field validation
+2025-06-06 10:23:59,397 - INFO - Running test: Email case insensitivity validation
+2025-06-06 10:23:59,397 - INFO - Refreshing page
+2025-06-06 10:24:03,424 - INFO - Email case-insensitivity handled correctly
+2025-06-06 10:25:00,133 - INFO - Opening signup page
+2025-06-06 10:25:01,875 - INFO - Running test: Blank field validation
+2025-06-06 10:25:03,279 - INFO - Running test: Very long email address
+2025-06-06 10:25:03,279 - INFO - Refreshing page
+2025-06-06 10:28:50,332 - INFO - Opening signup page
+2025-06-06 10:28:52,047 - INFO - Running test: Blank field validation
+2025-06-06 10:28:52,681 - INFO - Running test: Very long email address
+2025-06-06 10:28:52,681 - INFO - Refreshing page
+2025-06-06 10:29:48,275 - INFO - Opening signup page
+2025-06-06 10:29:49,948 - INFO - Running test: Blank field validation
+2025-06-06 10:29:51,233 - INFO - Running test: Very long email address
+2025-06-06 10:29:51,233 - INFO - Refreshing page
+2025-06-06 10:30:23,607 - INFO - Opening signup page
+2025-06-06 10:30:25,294 - INFO - Running test: Blank field validation
+2025-06-06 10:30:26,459 - INFO - Running test: Very long email address
+2025-06-06 10:30:26,460 - INFO - Refreshing page
+2025-06-06 10:30:29,550 - INFO - Long email validation passed
+2025-06-06 10:31:16,341 - INFO - Opening signup page
+2025-06-06 10:31:17,998 - INFO - Running test: Blank field validation
+2025-06-06 10:31:18,885 - INFO - Running test: Browser autofill detection
+2025-06-06 10:31:18,886 - INFO - Refreshing page
+2025-06-06 10:31:34,624 - INFO - Opening signup page
+2025-06-06 10:31:36,239 - INFO - Running test: Blank field validation
+2025-06-06 10:31:37,707 - INFO - Running test: Copy-paste password restriction
+2025-06-06 10:32:47,603 - INFO - Opening signup page
+2025-06-06 10:32:49,472 - INFO - Running test: Blank field validation
+2025-06-06 10:32:51,691 - INFO - Blank full name validation passed
+2025-06-06 10:32:52,023 - INFO - Blank email validation passed
+2025-06-06 10:32:52,451 - INFO - Blank password validation passed
+2025-06-06 10:32:52,464 - INFO - Running test: Full name max length validation
+2025-06-06 10:32:52,464 - INFO - Refreshing page
+2025-06-06 10:32:55,601 - INFO - Full name length validation passed
+2025-06-06 10:32:55,602 - INFO - Running test: Full name special character validation
+2025-06-06 10:32:55,602 - INFO - Refreshing page
+2025-06-06 10:32:58,601 - INFO - Full name special character validation passed
+2025-06-06 10:32:58,603 - INFO - Running test: Email case insensitivity validation
+2025-06-06 10:32:58,603 - INFO - Refreshing page
+2025-06-06 10:33:02,938 - INFO - Email case-insensitivity handled correctly
+2025-06-06 10:33:02,940 - INFO - Running test: Invalid email format validation
+2025-06-06 10:33:02,940 - INFO - Refreshing page
+2025-06-06 10:33:05,901 - INFO - Invalid email format validation passed
+2025-06-06 10:33:05,902 - INFO - Running test: Very long email address
+2025-06-06 10:33:05,902 - INFO - Refreshing page
+2025-06-06 10:33:09,100 - INFO - Long email validation passed
+2025-06-06 10:33:09,102 - INFO - Running test: Password pattern validation
+2025-06-06 10:33:09,102 - INFO - Refreshing page
+2025-06-06 10:33:12,137 - INFO - Password pattern validation passed
+2025-06-06 10:33:12,143 - INFO - Running test: Password case sensitivity
+2025-06-06 10:33:12,143 - INFO - Refreshing page
+2025-06-06 10:33:14,816 - INFO - Password case mismatch correctly validated
+2025-06-06 10:33:14,818 - INFO - Running test: Password mismatch validation
+2025-06-06 10:33:14,818 - INFO - Refreshing page
+2025-06-06 10:33:18,018 - INFO - Password mismatch validation passed
+2025-06-06 10:33:18,020 - INFO - Running test: Existing user signup validation
+2025-06-06 10:33:18,020 - INFO - Refreshing page
+2025-06-06 10:33:21,671 - INFO - Signup blocked for existing user – validation passed
+2025-06-06 10:33:21,676 - INFO - Running test: Successful signup flow
+2025-06-06 10:33:21,676 - INFO - Refreshing page
+2025-06-06 10:33:27,359 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 10:33:47,757 - INFO - Opening signup page
+2025-06-06 10:33:49,495 - INFO - Running test: Blank field validation
+2025-06-06 10:33:51,678 - INFO - Blank full name validation passed
+2025-06-06 10:33:51,900 - INFO - Blank email validation passed
+2025-06-06 10:33:52,326 - INFO - Blank password validation passed
+2025-06-06 10:33:52,328 - INFO - Running test: Full name max length validation
+2025-06-06 10:33:52,328 - INFO - Refreshing page
+2025-06-06 10:33:55,485 - INFO - Full name length validation passed
+2025-06-06 10:33:55,486 - INFO - Running test: Full name special character validation
+2025-06-06 10:33:55,486 - INFO - Refreshing page
+2025-06-06 10:33:58,648 - INFO - Full name special character validation passed
+2025-06-06 10:33:58,650 - INFO - Running test: Email case insensitivity validation
+2025-06-06 10:33:58,650 - INFO - Refreshing page
+2025-06-06 10:34:02,794 - INFO - Email case-insensitivity handled correctly
+2025-06-06 10:34:02,799 - INFO - Running test: Invalid email format validation
+2025-06-06 10:34:02,799 - INFO - Refreshing page
+2025-06-06 10:34:05,768 - INFO - Invalid email format validation passed
+2025-06-06 10:34:05,769 - INFO - Running test: Very long email address
+2025-06-06 10:34:05,769 - INFO - Refreshing page
+2025-06-06 10:34:09,038 - INFO - Long email validation passed
+2025-06-06 10:34:09,042 - INFO - Running test: Password pattern validation
+2025-06-06 10:34:09,042 - INFO - Refreshing page
+2025-06-06 10:34:12,096 - INFO - Password pattern validation passed
+2025-06-06 10:34:12,097 - INFO - Running test: Password case sensitivity
+2025-06-06 10:34:12,097 - INFO - Refreshing page
+2025-06-06 10:34:14,883 - INFO - Password case mismatch correctly validated
+2025-06-06 10:34:14,885 - INFO - Running test: Password mismatch validation
+2025-06-06 10:34:14,885 - INFO - Refreshing page
+2025-06-06 10:34:17,878 - INFO - Password mismatch validation passed
+2025-06-06 10:34:17,879 - INFO - Running test: Existing user signup validation
+2025-06-06 10:34:17,879 - INFO - Refreshing page
+2025-06-06 10:34:21,138 - INFO - Signup blocked for existing user – validation passed
+2025-06-06 10:34:21,142 - INFO - Running test: Successful signup flow
+2025-06-06 10:34:21,143 - INFO - Refreshing page
+2025-06-06 10:34:27,090 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 10:34:27,090 - INFO - Quitting browser
