@@ -36,7 +36,7 @@ def email_length_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Email is too long')]")))
 
 def email_format_validation():
-    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'email must be an email')]")))
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Invalid email address')]")))
 
 
 def full_name_special_validation():
@@ -173,7 +173,7 @@ class TestSignIn:
         email_input_field().send_keys(creds.NON_EXIST_USER)
         password_input_field().send_keys(password)
         signin_btn().click()
-        assert non_existing_user_error_message().text == error.NON_EXITING_USER_MESSAGE
+        assert non_existing_user_error_message().text == error.NON_EXISTING_USER_MESSAGE
         logger.info("Invalid password validation passed")
 
     def test_invalid_password(self):

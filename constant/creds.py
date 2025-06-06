@@ -7,7 +7,8 @@ VALID_FULL_NAME = generate_random_full_name()
 INVALID_EMAIL_FORMAT = "invalid@gmail"
 NON_EXIST_USER = "nonexist@gmail.com"
 PASSWORD= "Password@123"
+NEW_PASSWORD = "Newpassword@123"
 MISMATCH_PASSWORD = "Mismatch@123"
 WEAK_PASSWORD = "weakpass1"
 VALID_UNIQUE_EMAIL = generate_unique_email()
-EMAIL_ALREADY_EXISTS = "Email already registered"
+

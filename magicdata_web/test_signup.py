@@ -121,6 +121,12 @@ def signup_success_message():
 def existing_user_error_message():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email already registered')]")))
 
+def toggle_visibility_icon():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@role='button']")))
+
+def signin_btn():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Sign In']")))
+
 # ============================== TEST CASES ==============================
 
 class TestSignup:
