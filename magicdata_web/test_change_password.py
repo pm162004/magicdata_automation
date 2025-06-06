@@ -244,10 +244,13 @@ class TestSignup:
         assert validation_assert.DASHBOARD in driver.current_url
         logger.info("Signup successful and redirected to dashboard/home")
 
+
     def test_my_profile(self):
         logger.info("Navigating to Reset Password page via My Profile")
         check_profile().click()
         check_security().click()
+
+
 
     def test_blank_field_validation(self):
         logger.info("Testing blank field validation in change password form")
@@ -256,6 +259,8 @@ class TestSignup:
         assert check_blank_new_password().text == validation_assert.ENTER_NEW_PASSWORD
         assert check_blank_confirm_password().text == validation_assert.ENTER_CONFIRM_PASSWORD
         logger.info("Blank field validations passed")
+
+
 
     def test_confirm_password_mismatch_validation(self):
         logger.info("Testing confirm password mismatch validation")
@@ -267,6 +272,7 @@ class TestSignup:
         toggle_visibility_icon_confirm_password().click()
         assert get_confirm_password_mismatch_error().text == error.DIFFERENT_PASSWORD_ERROR
         logger.info("Confirm password mismatch validation passed")
+
 
 
 
@@ -287,6 +293,8 @@ class TestSignup:
         assert get_incorrect_current_password_error().text == error.INVALID_CURRENT_PASSWORD
         logger.info("Wrong Current password validation passed")
 
+
+
     def test_validation_new_password(self):
         logger.info("Testing new password validation rules")
         current_password_input_field().send_keys(clear_input)
@@ -300,6 +308,8 @@ class TestSignup:
         toggle_visibility_icon_new_password().click()
         toggle_visibility_icon_confirm_password().click()
         logger.info("New password validation passed")
+
+
 
     def test_new_password_as_current_password(self):
         logger.info("Testing validation when new password is same as current password")
@@ -317,6 +327,8 @@ class TestSignup:
         assert get_same_as_current_password_error().text == error.OLD_PASSWORD_ERROR
 
 
+
+
     def test_copy_paste_new_password(self):
         logger.info("Testing copy-paste functionality in new password fields")
         current_password_input_field().send_keys(clear_input)
@@ -328,6 +340,8 @@ class TestSignup:
         new_password_input_field().send_keys(Keys.CONTROL + 'A' + Keys.CONTROL + 'C')
         confirm_password_input_field().send_keys(Keys.CONTROL + 'v')
         logger.info("Copy-paste test completed")
+
+
 
     def test_change_password_flow(self):
         logger.info("Testing full password change flow")
@@ -350,6 +364,8 @@ class TestSignup:
         time.sleep(5)
         logger.info("Password change successful")
 
+
+
     def test_old_password_login(self):
         logger.info("Testing login with old password (should fail)")
         avtar_icon().click()
@@ -363,6 +379,8 @@ class TestSignup:
         signin_btn().click()
         time.sleep(3)
         logger.info("Old password login test passed (login failed as expected)")
+
+
 
     def test_new_password_login(self):
         refresh_page()
@@ -383,5 +401,9 @@ class TestSignup:
         update_btn().click()
         confirm_btn().click()
         close_alert().click()
+        assert check_success_message_change_password().text == validation_assert.CHANGE_PASSWORD_SUCCESS_MESSAGE
+        overlay_spinner()
+        time.sleep(5)
         quit_browser()
+
         logger.info("Password reset to original and browser closed")

@@ -1451,3 +1451,45 @@
 2025-06-06 17:28:39,174 - INFO - Testing login with new password
 2025-06-06 17:28:45,462 - INFO - Quitting browser
 2025-06-06 17:28:45,585 - INFO - Password reset to original and browser closed
+2025-06-06 17:29:51,502 - INFO - Opening signup page
+2025-06-06 17:29:53,370 - INFO - Running test: Valid login flow
+2025-06-06 17:29:53,370 - INFO - Refreshing page
+2025-06-06 17:30:01,662 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:32:07,335 - INFO - Opening signup page
+2025-06-06 17:32:09,074 - INFO - Running test: Valid login flow
+2025-06-06 17:32:09,074 - INFO - Refreshing page
+2025-06-06 17:32:17,377 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:32:24,105 - INFO - Testing blank field validation in change password form
+2025-06-06 17:32:24,154 - INFO - Testing confirm password mismatch validation
+2025-06-06 17:32:24,202 - INFO - Testing Wrong current password validation rules
+2025-06-06 17:32:24,253 - INFO - Testing new password validation rules
+2025-06-06 17:32:24,302 - INFO - Testing validation when new password is same as current password
+2025-06-06 17:32:24,350 - INFO - Testing copy-paste functionality in new password fields
+2025-06-06 17:32:24,398 - INFO - Testing full password change flow
+2025-06-06 17:32:24,447 - INFO - Testing login with old password (should fail)
+2025-06-06 17:32:24,495 - INFO - Refreshing page
+2025-06-06 17:32:38,076 - INFO - Opening signup page
+2025-06-06 17:32:39,737 - INFO - Running test: Valid login flow
+2025-06-06 17:32:39,737 - INFO - Refreshing page
+2025-06-06 17:32:47,077 - INFO - Signup successful and redirected to dashboard/home
+2025-06-06 17:32:50,079 - INFO - Navigating to Reset Password page via My Profile
+2025-06-06 17:32:54,042 - INFO - Testing blank field validation in change password form
+2025-06-06 17:32:54,381 - INFO - Blank field validations passed
+2025-06-06 17:32:57,389 - INFO - Testing confirm password mismatch validation
+2025-06-06 17:32:58,104 - INFO - Confirm password mismatch validation passed
+2025-06-06 17:33:01,109 - INFO - Testing Wrong current password validation rules
+2025-06-06 17:33:03,101 - INFO - Wrong Current password validation passed
+2025-06-06 17:33:06,106 - INFO - Testing new password validation rules
+2025-06-06 17:33:07,084 - INFO - New password validation passed
+2025-06-06 17:33:10,090 - INFO - Testing validation when new password is same as current password
+2025-06-06 17:33:11,244 - INFO - New password same as current password validation passed
+2025-06-06 17:33:14,285 - INFO - Testing copy-paste functionality in new password fields
+2025-06-06 17:33:15,256 - INFO - Copy-paste test completed
+2025-06-06 17:33:18,262 - INFO - Testing full password change flow
+2025-06-06 17:33:27,537 - INFO - Password change successful
+2025-06-06 17:33:30,542 - INFO - Testing login with old password (should fail)
+2025-06-06 17:34:06,022 - INFO - Old password login test passed (login failed as expected)
+2025-06-06 17:34:09,027 - INFO - Refreshing page
+2025-06-06 17:34:11,000 - INFO - Testing login with new password
+2025-06-06 17:34:23,385 - INFO - Quitting browser
+2025-06-06 17:34:23,653 - INFO - Password reset to original and browser closed
