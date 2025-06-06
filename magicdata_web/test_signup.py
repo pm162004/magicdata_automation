@@ -118,7 +118,8 @@ class TestSignup:
         assert check_blank_password().text == validation_assert.ENTER_SIGNUP_PASSWORD
         logger.info("Blank password validation passed")
 
-    def test_full_name_validation(self):
+    def test_full_name_length_validation(self):
+        refresh_page()
         full_name_input_field().send_keys(creds.LONG_FULL_NAME)
         email_input_field().send_keys(email)
         password_input_field().send_keys(password)
@@ -126,6 +127,14 @@ class TestSignup:
         create_an_account_btn().click()
         assert full_name_length_validation().text == error.LENGTH_FULL_NAME_VALIDATION
 
+    def test_full_name_special_validation(self):
+        refresh_page()
+        full_name_input_field().send_keys(creds.INVALID_FULL_NAME)
+        email_input_field().send_keys(email)
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(confirm_password)
+        create_an_account_btn().click()
+        assert full_name_special_validation().text == error.ENTER_VALID_FULLNAME
     # def test_already_exist_username1(self):
     #     logger.info("Running test: Existing username (suggestion 1)")
     #     refresh_page()

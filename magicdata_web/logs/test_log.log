@@ -28,3 +28,58 @@
 2025-06-05 23:22:32,233 - INFO - Opening signup page
 2025-06-05 23:22:32,951 - INFO - Running test: Blank field validation
 2025-06-05 23:22:34,377 - INFO - Blank full name validation passed
+2025-06-06 08:45:42,281 - INFO - Opening signup page
+2025-06-06 08:45:43,847 - INFO - Running test: Blank field validation
+2025-06-06 08:45:46,227 - INFO - Blank full name validation passed
+2025-06-06 08:45:46,312 - INFO - Blank email validation passed
+2025-06-06 08:45:46,406 - INFO - Blank password validation passed
+2025-06-06 08:46:24,356 - INFO - Opening signup page
+2025-06-06 08:46:26,086 - INFO - Running test: Blank field validation
+2025-06-06 08:46:28,284 - INFO - Blank full name validation passed
+2025-06-06 08:46:28,371 - INFO - Blank email validation passed
+2025-06-06 08:46:28,460 - INFO - Blank password validation passed
+2025-06-06 08:49:29,404 - INFO - Opening signup page
+2025-06-06 08:49:31,007 - INFO - Running test: Blank field validation
+2025-06-06 08:49:33,075 - INFO - Blank full name validation passed
+2025-06-06 08:49:33,159 - INFO - Blank email validation passed
+2025-06-06 08:49:33,251 - INFO - Blank password validation passed
+2025-06-06 08:50:01,447 - INFO - Opening signup page
+2025-06-06 08:50:02,982 - INFO - Running test: Blank field validation
+2025-06-06 08:50:05,051 - INFO - Blank full name validation passed
+2025-06-06 08:50:05,140 - INFO - Blank email validation passed
+2025-06-06 08:50:05,232 - INFO - Blank password validation passed
+2025-06-06 08:50:05,723 - INFO - Refreshing page
+2025-06-06 08:50:48,510 - INFO - Opening signup page
+2025-06-06 08:50:50,054 - INFO - Running test: Blank field validation
+2025-06-06 08:50:52,042 - INFO - Blank full name validation passed
+2025-06-06 08:50:52,132 - INFO - Blank email validation passed
+2025-06-06 08:50:52,223 - INFO - Blank password validation passed
+2025-06-06 08:50:52,706 - INFO - Refreshing page
+2025-06-06 08:51:12,610 - INFO - Opening signup page
+2025-06-06 08:51:14,189 - INFO - Running test: Blank field validation
+2025-06-06 08:51:15,635 - INFO - Blank full name validation passed
+2025-06-06 08:51:15,724 - INFO - Blank email validation passed
+2025-06-06 08:51:15,816 - INFO - Blank password validation passed
+2025-06-06 08:51:15,817 - INFO - Refreshing page
+2025-06-06 08:51:17,557 - INFO - Refreshing page
+2025-06-06 08:51:30,921 - INFO - Opening signup page
+2025-06-06 08:51:32,515 - INFO - Running test: Blank field validation
+2025-06-06 08:51:34,758 - INFO - Blank full name validation passed
+2025-06-06 08:51:34,846 - INFO - Blank email validation passed
+2025-06-06 08:51:34,940 - INFO - Blank password validation passed
+2025-06-06 08:51:34,942 - INFO - Refreshing page
+2025-06-06 08:51:36,724 - INFO - Refreshing page
+2025-06-06 08:51:57,308 - INFO - Opening signup page
+2025-06-06 08:51:58,975 - INFO - Running test: Blank field validation
+2025-06-06 08:52:00,389 - INFO - Blank full name validation passed
+2025-06-06 08:52:00,484 - INFO - Blank email validation passed
+2025-06-06 08:52:00,575 - INFO - Blank password validation passed
+2025-06-06 08:52:00,577 - INFO - Refreshing page
+2025-06-06 08:52:02,535 - INFO - Refreshing page
+2025-06-06 08:52:39,094 - INFO - Opening signup page
+2025-06-06 08:52:40,773 - INFO - Running test: Blank field validation
+2025-06-06 08:52:42,759 - INFO - Blank full name validation passed
+2025-06-06 08:52:42,845 - INFO - Blank email validation passed
+2025-06-06 08:52:42,941 - INFO - Blank password validation passed
+2025-06-06 08:52:42,943 - INFO - Refreshing page
+2025-06-06 08:52:44,788 - INFO - Refreshing page
