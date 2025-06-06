@@ -176,7 +176,7 @@ class TestSignup:
         logger.info("Running test: Invalid email format validation")
         refresh_page()
         full_name_input_field().send_keys(creds.VALID_FULL_NAME)
-        email_input_field().send_keys(creds.INVALID_EMAIL)
+        email_input_field().send_keys(creds.INVALID_EMAIL_FORMAT)
         password_input_field().send_keys(password)
         confirm_password_input_field().send_keys(confirm_password)
         create_an_account_btn().click()
