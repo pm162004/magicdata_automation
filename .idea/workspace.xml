@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fefca66a-7eb6-49fe-baeb-1fe74d112cdd" name="Changes" comment="initial commit" />
+    <list default="true" id="fefca66a-7eb6-49fe-baeb-1fe74d112cdd" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/constant/creds.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/creds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/input_field.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/input_field.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constant/validation_assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/validation_assert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_web/test_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/test_signup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,20 +26,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "pm162004"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;pm162004&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/pm162004/magicdata_automation",
-    "accountId": "5d3da423-315c-49a0-ada5-58775cf03d07"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/pm162004/magicdata_automation&quot;,
+    &quot;accountId&quot;: &quot;5d3da423-315c-49a0-ada5-58775cf03d07&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -45,6 +51,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests in test_signup.py.executor": "Run",
+    "Python.creds.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -85,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749131180983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749179383899</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749179383899</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
