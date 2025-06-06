@@ -18,7 +18,7 @@ driver.get(config.WEB_URL)
 email = config.CORRECT_EMAIL
 password = config.CORRECT_PASSWORD
 confirm_password = config.CONFIRM_PASSWORD
-wait = WebDriverWait(driver, 30)
+wait = WebDriverWait(driver, 60)
 clear_input = Keys.SPACE+ Keys.CONTROL + 'a' + Keys.BACKSPACE
 
 
@@ -31,6 +31,9 @@ def full_name_input_field():
 
 def full_name_length_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Full Name is too long')]")))
+
+def email_length_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Email is too long')]")))
 
 def full_name_special_validation():
     return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Full Name should contain only letters and numbers')]")))
@@ -80,6 +83,7 @@ def success_signup_message():
 
 def refresh_page():
     logger.info("Refreshing page")
+    time.sleep(1)
     return driver.refresh()
 
 def quit_browser():
@@ -102,14 +106,20 @@ def save_screenshot(filename, use_timestamp=True, folder="screenshorts"):
     driver.save_screenshot(f"{folder}/{filename}")
     return full_path
 
-def email_format_validation():
-    return driver.find_element(By.XPATH, "//div[contains(text(),'Please enter a valid email address')]")  # Adjust text if needed
+def valid_email_validation():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Please enter a valid email address')]")))  # Adjust text if needed
 
 def password_mismatch_validation():
-    return driver.find_element(By.XPATH, "//div[contains(text(),\"Confirm Password doesn't match with Password.\")]")
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),\"Confirm Password doesn't match with Password.\")]")))
 
 def password_pattern_validation():
-    return driver.find_element(By.XPATH, "//div[contains(text(),'Password must contain at least: 1 uppercase letter,1 lowercase letter, 1 number and 1 special character.')]")
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Password must contain at least: 1 uppercase letter,1 lowercase letter, 1 number and 1 special character.')]")))
+
+def signup_success_message():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//div[contains(text(),'Signup successful')]")))
+
+def existing_user_error_message():
+    return wait.until(EC.presence_of_element_located((By.XPATH, "//span[contains(text(),'Email already registered')]")))
 
 # ============================== TEST CASES ==============================
 
@@ -151,6 +161,17 @@ class TestSignup:
         assert full_name_special_validation().text == error.ENTER_VALID_FULLNAME
         logger.info("Full name special character validation passed")
 
+
+    def test_email_case_insensitivity(self):
+        logger.info("Running test: Email case insensitivity validation")
+        refresh_page()
+        full_name_input_field().send_keys(creds.VALID_FULL_NAME)
+        email_input_field().send_keys(email.upper())
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(password)
+        create_an_account_btn().click()
+        assert existing_user_error_message().text == error.EMAIL_ALREADY_EXISTS
+        logger.info("Email case-insensitivity handled correctly")
     def test_invalid_email_format(self):
         logger.info("Running test: Invalid email format validation")
         refresh_page()
@@ -159,19 +180,41 @@ class TestSignup:
         password_input_field().send_keys(password)
         confirm_password_input_field().send_keys(confirm_password)
         create_an_account_btn().click()
-        assert email_format_validation().text == error.ENTER_VALID_EMAIL
+        assert valid_email_validation().text == error.ENTER_VALID_EMAIL
         logger.info("Invalid email format validation passed")
 
+
+    def test_very_long_email(self):
+        logger.info("Running test: Very long email address")
+        refresh_page()
+        full_name_input_field().send_keys(creds.VALID_FULL_NAME)
+        email_input_field().send_keys(creds.LONG_EMAIL)
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(password)
+        create_an_account_btn().click()
+        assert email_length_validation().text == error.LENGTH_EMAIL_VALIDATION
+        logger.info("Long email validation passed")
     def test_password_pattern_validation(self):
         logger.info("Running test: Password pattern validation")
         refresh_page()
         full_name_input_field().send_keys(creds.VALID_FULL_NAME)
         email_input_field().send_keys(email)
-        password_input_field().send_keys(creds.WEAK_PASSWORD)  # Fails: no uppercase, no special char
+        password_input_field().send_keys(creds.WEAK_PASSWORD)
         confirm_password_input_field().send_keys(creds.WEAK_PASSWORD)
         create_an_account_btn().click()
         assert password_pattern_validation().text == error.PASSWORD_PATTERN_VALIDATION
         logger.info("Password pattern validation passed")
+
+    def test_password_case_sensitivity(self):
+        logger.info("Running test: Password case sensitivity")
+        refresh_page()
+        full_name_input_field().send_keys(creds.VALID_FULL_NAME)
+        email_input_field().send_keys(creds.VALID_UNIQUE_EMAIL)
+        password_input_field().send_keys("Test@123")
+        confirm_password_input_field().send_keys("test@123")
+        create_an_account_btn().click()
+        assert password_mismatch_validation().text == error.PASSWORD_NOT_MATCHING
+        logger.info("Password case mismatch correctly validated")
 
     def test_password_mismatch_validation(self):
         logger.info("Running test: Password mismatch validation")
@@ -184,16 +227,28 @@ class TestSignup:
         assert password_mismatch_validation().text == error.PASSWORD_NOT_MATCHING
         logger.info("Password mismatch validation passed")
 
+    def test_existing_user_signup(self):
+        logger.info("Running test: Existing user signup validation")
+        refresh_page()
+
+        full_name_input_field().send_keys(creds.VALID_FULL_NAME)
+        email_input_field().send_keys(email)
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(confirm_password)
+        create_an_account_btn().click()
+        assert existing_user_error_message().text == error.EMAIL_ALREADY_EXISTS
+        logger.info("Signup blocked for existing user – validation passed")
+
     def test_successful_signup(self):
         logger.info("Running test: Successful signup flow")
         refresh_page()
-        full_name_input_field().send_keys(generate_random_full_name())
-        email_input_field().send_keys(generate_unique_email())
-        password_input_field().send_keys(creds.PASSWORD)
-        confirm_password_input_field().send_keys(creds.PASSWORD)
+        full_name_input_field().send_keys(creds.VALID_FULL_NAME)
+        email_input_field().send_keys(creds.VALID_UNIQUE_EMAIL)
+        password_input_field().send_keys(password)
+        confirm_password_input_field().send_keys(confirm_password)
         create_an_account_btn().click()
-        WebDriverWait(driver, 10).until(EC.visibility_of(signup_success_message()))
-        assert signup_success_message().is_displayed()
+        time.sleep(3)
+        assert validation_assert.DASHBOARD in driver.current_url
         logger.info("Signup successful and redirected to dashboard/home")
-
+        quit_browser()
 

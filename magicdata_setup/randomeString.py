@@ -62,4 +62,4 @@ def generate_random_full_name():
 
 def generate_unique_email():
     timestamp = int(time.time())
-    return f"user{timestamp}@testmail.com"
+    return f"user{timestamp}@mailinator.com"
