@@ -1,0 +1,46 @@
+variables:
+  IS_SONARQUBE_ENABLED: "false"    
+  IS_MEGALINTER_ENABLED: "false"  
+  IS_DANGER_ENABLED: "false" 
+  IS_BUMP_VERSION_ENABLED: "false"         
+  
+stages:
+  - sonarqube
+  - megalinter
+  - danger
+  - bump-version
+
+include:
+  - project: $GITLAB_CI_PROJECT
+    file: $GITLAB_FILE_SONARQUBE
+  - project: $GITLAB_CI_PROJECT
+    file: $GITLAB_FILE_MEGALINTER
+  - project: $GITLAB_CI_PROJECT
+    file: $GITLAB_FILE_DANGER
+  - project: $GITLAB_CI_PROJECT
+    file: $GITLAB_FILE_BUMP_VERSION
+
+
+sonarqube-check:
+  stage: sonarqube
+  rules:
+    - if: '$IS_SONARQUBE_ENABLED == "true" && $CI_PIPELINE_SOURCE == "merge_request_event"'
+  script: echo "Running SonarQube job"
+
+megalinter-check:
+  stage: megalinter
+  rules:
+    - if: '$IS_MEGALINTER_ENABLED == "true" && $CI_PIPELINE_SOURCE == "merge_request_event"'
+  script: echo "Running MegaLinter job"
+
+danger-check:
+  stage: danger
+  rules:
+    - if: '$IS_DANGER_ENABLED == "true" && $CI_PIPELINE_SOURCE == "merge_request_event"'
+  script: echo "Running MegaLinter job"
+  
+bump-version-check:
+  stage: bump-version
+  rules:
+    - if: '$IS_BUMP_VERSION_ENABLED == "true" && $CI_COMMIT_BRANCH == "main"'
+  script: echo "Running MegaLinter job"

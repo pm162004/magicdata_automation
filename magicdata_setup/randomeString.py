@@ -63,7 +63,41 @@ def generate_random_full_name():
 def generate_unique_email():
     timestamp = int(time.time())
     return f"user{timestamp}@mailinator.com"
+print(generate_unique_email())
 
 def generate_random_emoji_string(length=2):
     emoji_list = ['😊', '🚀', '😂', '🔥', '❤️', '😎', '🌟', '🎉', '🐍', '🤖', '👑', '💡']
     return ''.join(random.choices(emoji_list, k=length))
+def get_words_from_api(part_of_speech, max_results=100):
+    url = f"https://api.datamuse.com/words?rel_jjb={part_of_speech}&max={max_results}"
+    try:
+        response = requests.get(url)
+        response.raise_for_status()
+        data = response.json()
+        return [item["word"] for item in data if "word" in item]
+    except Exception as e:
+        print(f"API error fetching {part_of_speech} words:", e)
+        return []
+
+def generate_random_project_names(count=1000):
+    nouns = get_words_from_api("project")
+    adjectives = get_words_from_api("cool")
+
+    if not nouns or not adjectives:
+        print("Failed to get word lists.")
+        return []
+
+    projects = []
+    for _ in range(count):
+        adj = random.choice(adjectives).capitalize()
+        noun = random.choice(nouns).capitalize()
+        project_name = f"{adj} {noun}"
+        projects.append(project_name)
+
+    return projects
+
+# Example usage
+random_projects = generate_random_project_names(5)
+print("Random Project Names:")
+for name in random_projects:
+    print("🔹", name)

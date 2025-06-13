@@ -152,106 +152,7 @@ def verify_avtar_email():
 
 # ============================== TEST CASES ==============================
 
-class TestSignIn:
-
-    def test_blank_field_validation(self):
-        logger.info("Running test: Blank field validation")
-        signin_btn().click()
-        assert check_blank_email().text == validation_assert.ENTER_SIGNIN_EMAIL
-        assert check_blank_password().text == validation_assert.ENTER_SIGNIN_PASSWORD
-        logger.info("Blank password validation passed")
-
-    def test_invalid_email(self):
-        logger.info("Running test: Invalid email format")
-        refresh_page()
-        email_input_field().send_keys(creds.INVALID_EMAIL_FORMAT)
-        password_input_field().send_keys(password)
-        signin_btn().click()
-        assert valid_email_validation().text == error.ENTER_VALID_EMAIL
-        logger.info("Invalid email format validation passed")
-
-    def test_non_existing_email(self):
-        logger.info("Running test: Invalid email")
-        refresh_page()
-        email_input_field().send_keys(creds.NON_EXIST_USER)
-        password_input_field().send_keys(password)
-        signin_btn().click()
-        assert non_existing_user_error_message().text == error.NON_EXISTING_USER_MESSAGE
-        logger.info("Invalid password validation passed")
-
-    def test_invalid_password(self):
-        logger.info("Running test: Invalid password")
-        refresh_page()
-        email_input_field().send_keys(email)
-        password_input_field().send_keys(creds.WEAK_PASSWORD)
-        signin_btn().click()
-        assert check_invalid_credentials().text == error.INVALID_PASSWORD_CREDS
-        logger.info("Invalid password validation passed")
-
-    def test_password_toggle_visibility(self):
-        logger.info("Running test: Password visibility toggle")
-        refresh_page()
-        email_input_field().send_keys(email)
-        password_input_field().send_keys(password)
-        toggle_visibility_icon().click()
-        visible_type = password_input_field().get_attribute("type")
-        assert visible_type == "text", "Password is not visible after toggle"
-        logger.info("Password visibility toggle working correctly")
-
-    def test_email_max_length(self):
-        logger.info("Running test: Email max length")
-        refresh_page()
-        long_email = "a" * 250 + "@test.com"
-        email_input_field().send_keys(long_email)
-        password_input_field().send_keys(config.CORRECT_PASSWORD)
-        signin_btn().click()
-        assert email_format_validation().text == error.VALID_EMAIL_FORMAT_ERROR
-        logger.info("Invalid password validation passed")
-
-    def test_email_with_spaces(self):
-        logger.info("Running test: Email with leading/trailing spaces")
-        refresh_page()
-        email_input_field().send_keys("  " + email + "  ")
-        password_input_field().send_keys(creds.PASSWORD)
-        signin_btn().click()
-        assert check_invalid_credentials().text == error.INVALID_PASSWORD_CREDS
-        logger.info("Invalid password validation passed")
-
-    def test_invalid_creds(self):
-        logger.info("Running test: Invalid creds")
-        refresh_page()
-        email_input_field().send_keys(creds.INVALID_EMAIL_FORMAT)
-        password_input_field().send_keys(creds.WEAK_PASSWORD)
-        signin_btn().click()
-        assert valid_email_validation().text == error.ENTER_VALID_EMAIL
-        logger.info("Invalid password validation passed")
-
-    def test_password_field_type_after_toggle_back(self):
-        logger.info("Running test: Password field type toggles back to password")
-
-        refresh_page()
-        email_input_field().send_keys(config.CORRECT_EMAIL)
-        password_input_field().send_keys(config.CORRECT_PASSWORD)
-        toggle_visibility_icon().click()
-        time.sleep(1)
-        toggle_visibility_icon().click()  # toggle back
-        visible_type = password_input_field().get_attribute("type")
-        assert visible_type == "password", "Password field should toggle back to hidden type"
-        logger.info("Password visibility toggle back working")
-
-    def test_login_with_uppercase_email(self):
-        logger.info("Running test: Login with uppercase email")
-
-        refresh_page()
-        email_input_field().send_keys(config.CORRECT_EMAIL.upper())
-        password_input_field().send_keys(config.CORRECT_PASSWORD)
-        signin_btn().click()
-        time.sleep(3)
-        assert validation_assert.DASHBOARD in driver.current_url
-        avtar_icon().click()
-        sign_out().click()
-        sign_out_btn().click()
-        logger.info("Login with uppercase email successful")
+class TestSignOut:
 
     def test_valid_login_flow(self):
         logger.info("Running test: Valid login flow")
@@ -265,12 +166,13 @@ class TestSignIn:
         assert validation_assert.DASHBOARD in driver.current_url
         logger.info("Signup successful and redirected to dashboard/home")
 
-    def test_valid_user_login(self):
-        logger.info("Running test: Valid login flow")
+    def test_logout(self):
+        logger.info("Running test: Valid logout  flow")
         refresh_page()
         avtar_icon().click()
-        time.sleep(3)
-        assert verify_avtar_email().text == config.CORRECT_EMAIL
+        sign_out().click()
+        time.sleep(2)
+        sign_out_btn().click()
         quit_browser()
 
 

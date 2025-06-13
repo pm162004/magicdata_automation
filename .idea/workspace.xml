@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fefca66a-7eb6-49fe-baeb-1fe74d112cdd" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/magicdata_web/test_profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/creds.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/creds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constant/validation_assert.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant/validation_assert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/magicdata_setup/randomeString.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_setup/randomeString.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_setup/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_setup/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/logs/test_log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/magicdata_web/test_change_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/test_change_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/magicdata_web/test_signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/magicdata_web/test_signup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,8 +182,35 @@
       <option name="project" value="LOCAL" />
       <updated>1749211542194</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749214328710</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1749214328710</updated>
+    </task>
+    <task id="LOCAL-00014" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1749214345388</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749214345388</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />

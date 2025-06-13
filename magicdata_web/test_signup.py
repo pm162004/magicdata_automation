@@ -1,4 +1,6 @@
 import time,os,datetime
+from openpyxl import Workbook, load_workbook
+
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium import webdriver
@@ -17,7 +19,10 @@ logger.info("Opening signup page")
 driver.get(config.WEB_URL)
 email = config.CORRECT_EMAIL
 password = config.CORRECT_PASSWORD
-confirm_password = config.CONFIRM_PASSWORD
+confirm_password = config.CORRECT_PASSWORD
+email_signup = creds.VALID_UNIQUE_EMAIL
+full_name = creds.VALID_FULL_NAME
+
 wait = WebDriverWait(driver, 60)
 clear_input = Keys.SPACE+ Keys.CONTROL + 'a' + Keys.BACKSPACE
 
@@ -127,6 +132,37 @@ def toggle_visibility_icon():
 def signin_btn():
     return wait.until(EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Sign In']")))
 
+def avtar_icon():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//span[contains(@class,'avatar-icon')]//*[name()='svg']")))
+def verify_avtar_email():
+    return wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='text-xs']")))
+
+
+
+
+def write_credentials_to_excel(fullname,email, password,confirm_password, filename="signup_credentials.xlsx", sheet_name="Users"):
+    try:
+        if os.path.exists(filename):
+            wb = load_workbook(filename)
+            ws = wb[sheet_name]
+        else:
+            from openpyxl import Workbook
+            wb = Workbook()
+            ws = wb.active
+            ws.title = sheet_name
+            ws.append(["Full Name","Email", "Password","Confirm password"])
+
+        next_row = ws.max_row + 1
+        ws.cell(row=next_row, column=1).value = fullname
+        ws.cell(row=next_row, column=2).value = email
+        ws.cell(row=next_row, column=3).value = password
+        ws.cell(row=next_row, column=4).value = confirm_password
+
+        wb.save(filename)
+        print(f"Saved in: {filename}, Row: {next_row}")
+    except Exception as e:
+        print(f"Failed to write to Excel: {e}")
+
 # ============================== TEST CASES ==============================
 
 class TestSignup:
@@ -215,7 +251,7 @@ class TestSignup:
         logger.info("Running test: Password case sensitivity")
         refresh_page()
         full_name_input_field().send_keys(creds.VALID_FULL_NAME)
-        email_input_field().send_keys(creds.VALID_UNIQUE_EMAIL)
+        email_input_field().send_keys(email_signup)
         password_input_field().send_keys("Test@123")
         confirm_password_input_field().send_keys("test@123")
         create_an_account_btn().click()
@@ -245,16 +281,28 @@ class TestSignup:
         assert existing_user_error_message().text == error.EMAIL_ALREADY_EXISTS
         logger.info("Signup blocked for existing user – validation passed")
 
+
     def test_successful_signup(self):
         logger.info("Running test: Successful signup flow")
         refresh_page()
         full_name_input_field().send_keys(creds.VALID_FULL_NAME)
-        email_input_field().send_keys(creds.VALID_UNIQUE_EMAIL)
+        email_input_field().send_keys(email_signup)
+        print(email_signup)
         password_input_field().send_keys(password)
         confirm_password_input_field().send_keys(confirm_password)
         create_an_account_btn().click()
         time.sleep(3)
         assert validation_assert.DASHBOARD in driver.current_url
         logger.info("Signup successful and redirected to dashboard/home")
+        write_credentials_to_excel(full_name,email_signup,password,confirm_password)
+
+    def test_valid_user_signup(self):
+        logger.info("Running test: Valid login flow")
+        refresh_page()
+        avtar_icon().click()
+        time.sleep(3)
+        assert verify_avtar_email().text == email_signup
         quit_browser()
+
+
 
